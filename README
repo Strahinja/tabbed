@@ -2,6 +2,11 @@ tabbed - generic tabbed interface
 =================================
 tabbed is a simple tabbed X window container.
 
+Changes to the original
+-----------------------
+All the applied patches are included in the ./applied directory. You should be
+able to understand all the changes from inspecting the ./config.def.h file.
+
 Requirements
 ------------
 In order to build tabbed you need the Xlib header files.
