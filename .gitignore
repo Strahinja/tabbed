@@ -1,0 +1,8 @@
+*~
+*.bak
+*.orig
+*.rej
+*.o
+tabbed
+xembed
+nohup.out

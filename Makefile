@@ -47,6 +47,8 @@ install: all
 	@mkdir -p "${DESTDIR}${PREFIX}/bin"
 	@cp -f ${BIN} "${DESTDIR}${PREFIX}/bin"
 	@chmod 755 "${DESTDIR}${PREFIX}/bin/tabbed"
+	@cp -f tabbed-surf "${DESTDIR}${PREFIX}/bin/tabbed-surf"
+	@chmod 755 "${DESTDIR}${PREFIX}/bin/tabbed-surf"
 	@echo installing manual pages to ${DESTDIR}${MANPREFIX}/man1
 	@mkdir -p "${DESTDIR}${MANPREFIX}/man1"
 	@sed "s/VERSION/${VERSION}/g" < tabbed.1 > "${DESTDIR}${MANPREFIX}/man1/tabbed.1"
@@ -56,6 +58,7 @@ install: all
 
 uninstall:
 	@echo removing executable files from ${DESTDIR}${PREFIX}/bin
+	@rm -f "${DESTDIR}${PREFIX}/bin/tabbed-surf"
 	@rm -f "${DESTDIR}${PREFIX}/bin/tabbed"
 	@rm -f "${DESTDIR}${PREFIX}/bin/xembed"
 	@echo removing manual pages from ${DESTDIR}${MANPREFIX}/man1
