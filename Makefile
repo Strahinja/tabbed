@@ -49,6 +49,8 @@ install: all
 	@chmod 755 "${DESTDIR}${PREFIX}/bin/tabbed"
 	@cp -f tsurf "${DESTDIR}${PREFIX}/bin/tsurf"
 	@chmod 755 "${DESTDIR}${PREFIX}/bin/tsurf"
+	@cp -f tst "${DESTDIR}${PREFIX}/bin/tst"
+	@chmod 755 "${DESTDIR}${PREFIX}/bin/tst"
 	@echo installing manual pages to ${DESTDIR}${MANPREFIX}/man1
 	@mkdir -p "${DESTDIR}${MANPREFIX}/man1"
 	@sed "s/VERSION/${VERSION}/g" < tabbed.1 > "${DESTDIR}${MANPREFIX}/man1/tabbed.1"
@@ -59,6 +61,7 @@ install: all
 uninstall:
 	@echo removing executable files from ${DESTDIR}${PREFIX}/bin
 	@rm -f "${DESTDIR}${PREFIX}/bin/tsurf"
+	@rm -f "${DESTDIR}${PREFIX}/bin/tst"
 	@rm -f "${DESTDIR}${PREFIX}/bin/tabbed"
 	@rm -f "${DESTDIR}${PREFIX}/bin/xembed"
 	@echo removing manual pages from ${DESTDIR}${MANPREFIX}/man1
