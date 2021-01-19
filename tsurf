@@ -1,4 +1,4 @@
 #!/bin/bash
 
-tabbed surf -e
+tabbed surf -N -e
 
