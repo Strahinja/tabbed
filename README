@@ -1,3 +1,8 @@
+****************************************************************************************
+*** NOTE: this repository is now archived. I have switched git hosting to sourcehut. ***
+*** See https://git.sr.ht/~strahinja/tabed                                           ***
+****************************************************************************************
+
 tabbed - generic tabbed interface
 =================================
 tabbed is a simple tabbed X window container.
